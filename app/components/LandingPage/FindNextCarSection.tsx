@@ -15,7 +15,6 @@ const FindNextCarSection = () => {
           </h3>
           <Input
             placeholder="Search by make, model, keyword"
-            enterButton
             className={styles.searchInput}
             suffix={
               <Button type="primary">
