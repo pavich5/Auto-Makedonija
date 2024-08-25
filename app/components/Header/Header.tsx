@@ -40,7 +40,7 @@ const Header = () => {
           <Link href="/browse" className={styles.link}>
             Sell Your Car
           </Link>
-          <Link href="/sell" className={styles.link}>
+          <Link href="/about" className={styles.link}>
             About Us
           </Link>
           <Link href="/contact" className={styles.link}>

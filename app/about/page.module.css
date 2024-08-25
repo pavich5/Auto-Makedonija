@@ -1,0 +1,181 @@
+.aboutUsContainer {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin: 0;
+  }
+  
+  /* History Section */
+  .history {
+    margin-bottom: 60px;
+  }
+  
+  .historyContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .historyImage {
+    flex: 1;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .historyText {
+    flex: 2;
+  }
+
+  .history h2 {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 30px;
+  }
+  
+  .historyText p {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .team {
+    margin-bottom: 60px;
+  }
+  
+  .team h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 35px;
+  }
+  .teamMembers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .teamMember {
+    flex: 1;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .teamImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ececec;
+  }
+  
+  .teamInfo h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 15px 0 5px;
+  }
+  
+  .teamInfo p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .submitButton {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .aboutUsContainer {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 1.75rem;
+    }
+  
+    .header p {
+      font-size: 0.875rem;
+    }
+  
+    .history h2 {
+      font-size: 1.25rem;
+    }
+  
+    .team h2 {
+      font-size: 2rem;
+    }
+    .teamMembers{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history h2 {
+        display: none;
+    }
+    .historyImage{
+        max-width: 90vw;
+    }
+  }
