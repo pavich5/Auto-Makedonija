@@ -1,0 +1,150 @@
+.footer {
+    background-color: #00494D;
+    color: #FFFFFF;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+}
+
+.section ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icons a {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #00FFCC;
+}
+
+.legal {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #00696D;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.legal ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.legal ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.legal ul li a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .section {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .section h4 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  
+    .section ul li {
+      margin-bottom: 10px;
+    }
+  
+    .section ul li a {
+      font-size: 14px;
+    }
+  
+    .social {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .icons {
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  
+    .icons a {
+      font-size: 20px;
+    }
+  
+    .legal {
+      width: 100%;
+      border-top: 1px solid #00696D;
+      padding-top: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .legal ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .legal ul li a {
+      font-size: 12px;
+    }
+  }
+  

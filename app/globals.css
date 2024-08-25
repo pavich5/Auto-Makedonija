@@ -1,0 +1,88 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 8px; /* Adjusted for a more modern look */
+  
+  /* Font settings based on common car sales websites */
+  --font-sans: "Helvetica Neue", Arial, sans-serif; /* Commonly used */
+  --font-serif: "Georgia", serif; /* For headings or accents */
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  /* Colors based on car sales themes */
+  --foreground-rgb: 34, 34, 34; /* Darker text color for readability */
+  --background-start-rgb: 255, 255, 255; /* White background */
+  --background-end-rgb: 240, 240, 240; /* Light grey for subtle contrast */
+
+  /* Updated gradients and colors */
+  --primary-glow: linear-gradient(to right, #0071ff, #00bfff);
+  --secondary-glow: radial-gradient(rgba(0, 113, 255, 0.2), rgba(0, 113, 255, 0));
+
+  /* Tile and card colors for modern aesthetics */
+  --tile-start-rgb: 255, 255, 255;
+  --tile-end-rgb: 240, 240, 240;
+  --tile-border: conic-gradient(
+    #cccccc80,
+    #cccccc40,
+    #cccccc30,
+    #cccccc20,
+    #cccccc10,
+    #cccccc10,
+    #cccccc80
+  );
+
+  /* Callout and card styles */
+  --callout-rgb: 245, 245, 245;
+  --callout-border-rgb: 200, 200, 200;
+  --card-rgb: 255, 255, 255;
+  --card-border-rgb: 220, 220, 220;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 10, 10, 10;
+    --tile-end-rgb: 0, 0, 0;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 50, 50, 50;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,465 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  margin-left: 150px;
+  color: white;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.shopNowButton {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.buyCarSection {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  background-color: #f5f7f8;
+}
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50vw;
+}
+
+.searchSection h2 {
+  font-size: 44px;
+  margin-bottom: 23px;
+}
+
+.searchSection h3 {
+  font-size: 25px;
+  color: rgb(80, 80, 80);
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.searchInput {
+  width: 40vw;
+  height: 50px;
+}
+
+.typeOfCarsWrapper {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.carType {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.carType:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
+
+.carType a {
+  text-decoration: none;
+  color: #0375d3;
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.carType img {
+  width: 210px;
+  height: 105px;
+}
+
+.typeOfFiltersWrapper{
+  display: flex;
+  align-items: center;
+}
+
+.filterType{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.filterType img{
+    height: 100px;
+    width: 100px;
+    margin: 120px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.filterType a {
+  text-decoration: none;
+  color: #0375d3;
+  font-weight: 500;
+}
+
+.shopSection {
+  padding: 40px 20px;
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+.shopSection h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  padding: 50px;
+}
+
+.shopSection .shopItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.shopSection .shopItem {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(22.333% - 40px);
+  transition: transform 0.2s;
+  text-align: center;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 450px;
+}
+
+.shopSection .shopItem:hover {
+  transform: scale(1.05);
+}
+
+.shopSection .shopItem img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.shopSection .shopItem h3 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.shopSection .shopItem p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.shopSection .shopItem a {
+  color: #1890ff;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.shopSection .shopItem a:hover {
+  text-decoration: underline;
+}
+
+.resourcesSection,
+.faqSection,
+.contactSection {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faqSectionWrapper{
+  width: 50vw;
+}
+.faqSection{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+
+
+.resourcesSection h2,
+.faqSection h2,
+.contactSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.faqSection h2 {
+  margin-bottom: 60px;
+  margin: 30px;
+}
+.resourcesWrapper,
+.faqWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.resourceImage{
+  width: 17.5vw;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.resourceItem a {
+  text-decoration: none;
+  margin-top: 25px;
+  color: #0375d3;
+  font-weight: 500;
+}
+
+.resourcesWrapper{
+  justify-content: center;
+  height: 60vh;
+}
+
+.resourceItem,
+.faqItem {
+  max-width: 20vw;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.resourceItem:hover,
+.faqItem:hover {
+  transform: scale(1.02);
+}
+
+.resourceItem h3,
+.faqItem h4 {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.resourceItem p {
+  margin-bottom: 25px;
+}
+
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 50vh;
+    justify-content: center;
+  }
+
+  .content {
+    margin-left: 20px;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.5rem;
+  }
+
+  .shopNowButton {
+    width: 90%;
+    height: 40px;
+    margin: 10px auto 0 auto;
+  }
+
+  .buyCarSection {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .searchSection {
+    max-width: 90vw;
+  }
+
+  .searchSection h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .searchSection h3 {
+    font-size: 1.2rem;
+  }
+
+  .searchInput {
+    width: 80vw;
+    height: 40px;
+  }
+
+  .typeOfCarsWrapper {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .carType {
+    margin: 20px 0;
+    width: 80%;
+  }
+
+  .carType img {
+    width: 150px;
+    height: 75px;
+  }
+
+  .typeOfFiltersWrapper {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .filterType {
+    margin: 20px 0;
+  }
+
+  .filterType img {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+  }
+
+  .shopSection {
+    padding: 20px 10px;
+    margin-bottom: 50px;
+  }
+
+  .shopSection h1 {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .shopSection .shopItems {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .shopSection .shopItem {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .shopSection .shopItem img {
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .shopSection .shopItem h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .shopSection .shopItem p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .resourcesSection,
+  .faqSection,
+  .contactSection {
+    padding: 20px 10px;
+  }
+
+  .faqSectionWrapper {
+    width: 90vw;
+  }
+
+  .faqSection {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .faqSection h2 {
+    font-size: 1.8rem;
+    margin: 20px;
+  }
+
+  .resourcesWrapper,
+  .faqWrapper {
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+  }
+
+  .resourceItem,
+  .faqItem {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .resourceImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .resourceItem h3,
+  .faqItem h4 {
+    margin-bottom: 15px;
+  }
+  
+  
+}
+
