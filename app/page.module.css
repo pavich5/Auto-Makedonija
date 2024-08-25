@@ -302,8 +302,9 @@
 
 @media (max-width: 768px) {
   .heroSection {
-    height: 50vh;
+    height: 55vh;
     justify-content: center;
+    
   }
 
   .content {
@@ -318,6 +319,12 @@
 
   .content p {
     font-size: 1.5rem;
+  }
+
+
+  .backgroundVideo {
+    left: -100%;
+    width: 200%; 
   }
 
   .shopNowButton {
@@ -356,7 +363,7 @@
 
   .carType {
     margin: 20px 0;
-    width: 80%;
+    width: 100%;
   }
 
   .carType img {
@@ -460,6 +467,8 @@
     margin-bottom: 15px;
   }
   
-  
+  .searchSection h2 {
+    font-size: 1.8rem;
+  }
 }
 

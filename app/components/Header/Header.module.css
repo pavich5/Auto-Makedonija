@@ -165,15 +165,17 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-    /* Ensure the image maintains its aspect ratio and does not stretch */
     background-size: contain; 
-    background-color: #fff; /* Optional: set a background color to fill any empty space */
+    background-color: #fff;
 }
 
 
 @media (max-width: 768px) {
     .nav {
         display: none;
+    }
+    .header{
+        height: 90px;
     }
 
     .hamburger {

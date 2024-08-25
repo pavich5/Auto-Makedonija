@@ -10,7 +10,7 @@ const FindNextCarSection = () => {
         <div className={styles.searchSection}>
           <h2>Find your next used car</h2>
           <h3>
-            With thousands of certified used vehicles to choose <br /> from,
+            With thousands of certified used vehicles to choose from,
             it’s easy to discover your perfect match.
           </h3>
           <Input
