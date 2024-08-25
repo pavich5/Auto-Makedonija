@@ -11,7 +11,9 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.6"
+    "next": "14.2.6",
+    "antd": "^5",                
+    "@ant-design/icons": "^5"    
   },
   "devDependencies": {
     "typescript": "^5",
