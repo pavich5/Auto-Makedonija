@@ -34,7 +34,7 @@ const Header = () => {
           }}
         >
           <img alt="e" src={logo_url} />
-          <p>Company Name</p>
+          <p>Auto Makedonija</p>
         </div>
         <nav className={styles.nav}>
           <Link href="/shopping/inventory" className={styles.link}>
@@ -71,7 +71,7 @@ const Header = () => {
         title={
           <div className={styles.logo}>
             <img alt="e" src={logo_url} />
-            <p>Company Name</p>
+            <p>Auto Makedonija</p>
           </div>
         }
         placement="right"

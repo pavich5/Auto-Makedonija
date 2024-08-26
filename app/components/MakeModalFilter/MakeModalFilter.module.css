@@ -25,7 +25,10 @@
     margin-bottom: 16px;
     margin-top: 10px;
   }
-  
+  .list {
+    max-height: 450px;
+    overflow-y: auto; 
+  }
   .brandItem {
     padding: 12px;
     border-radius: 4px;

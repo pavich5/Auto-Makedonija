@@ -291,6 +291,51 @@ export const filterTypes = [
     }
 ]
 
+export const carModels = {
+  Acura: ["ILX", "MDX", "RDX", "TLX", "NSX"],
+  AlfaRomeo: ["Giulia", "Stelvio", "4C", "Tonale"],
+  AstonMartin: ["DB11", "Vantage", "DBX"],
+  Audi: ["A3", "A4", "A6", "A8", "Q3", "Q5", "Q7", "Q8", "e-tron"],
+  Bentley: ["Bentayga", "Continental", "Flying Spur"],
+  BMW: ["1 Series", "2 Series", "3 Series", "4 Series", "5 Series", "7 Series", "X1", "X3", "X5", "i3", "i8"],
+  Buick: ["Encore", "Enclave", "Envision", "Regal"],
+  Cadillac: ["CT4", "CT5", "Escalade", "XT4", "XT5", "XT6"],
+  Chevrolet: ["Blazer", "Camaro", "Colorado", "Corvette", "Equinox", "Malibu", "Silverado", "Suburban", "Tahoe"],
+  Chrysler: ["300", "Pacifica", "Voyager"],
+  Dodge: ["Charger", "Challenger", "Durango", "Journey"],
+  Ferrari: ["488", "812", "Roma", "Portofino", "SF90"],
+  Fiat: ["500", "500X", "500L"],
+  Ford: ["F-150", "Mustang", "Explorer", "Escape", "Edge", "Expedition", "Fusion"],
+  Genesis: ["G70", "G80", "G90", "GV80"],
+  GMC: ["Acadia", "Canyon", "Sierra", "Terrain", "Yukon"],
+  Honda: ["Civic", "Accord", "CR-V", "Pilot", "Fit", "Odyssey", "Ridgeline"],
+  Hyundai: ["Elantra", "Santa Fe", "Sonata", "Tucson", "Kona", "Palisade"],
+  Infiniti: ["Q50", "Q60", "QX50", "QX60", "QX80"],
+  Jaguar: ["E-Pace", "F-Pace", "I-Pace", "XF", "XE", "F-Type"],
+  Jeep: ["Cherokee", "Grand Cherokee", "Wrangler", "Compass", "Renegade", "Gladiator"],
+  Kia: ["Forte", "Sorento", "Soul", "Sportage", "Telluride", "Optima", "Stinger"],
+  Lamborghini: ["Aventador", "Huracan", "Urus"],
+  LandRover: ["Defender", "Discovery", "Range Rover", "Evoque", "Velar"],
+  Lexus: ["ES", "GS", "GX", "IS", "LX", "NX", "RC", "RX", "UX"],
+  Lincoln: ["Aviator", "Corsair", "Nautilus", "Navigator"],
+  Maserati: ["Ghibli", "Levante", "Quattroporte"],
+  Mazda: ["Mazda3", "CX-3", "CX-5", "CX-9", "MX-5", "Mazda6"],
+  McLaren: ["GT", "720S", "600LT", "Artura"],
+  MercedesBenz: ["A-Class", "C-Class", "E-Class", "G-Class", "GLE", "GLS", "S-Class", "AMG GT", "CLA", "GLA"],
+  Mini: ["Cooper", "Countryman", "Clubman", "John Cooper Works"],
+  Mitsubishi: ["Eclipse Cross", "Outlander", "Mirage", "Pajero", "Lancer"],
+  Nissan: ["Altima", "Maxima", "Sentra", "Versa", "Rogue", "Murano", "Pathfinder", "Frontier", "Titan", "370Z"],
+  Porsche: ["911", "Cayenne", "Macan", "Panamera", "Taycan"],
+  Ram: ["1500", "2500", "3500", "ProMaster"],
+  RollsRoyce: ["Phantom", "Ghost", "Wraith", "Dawn", "Cullinan"],
+  Subaru: ["Impreza", "Legacy", "Outback", "Forester", "Crosstrek", "Ascent", "WRX"],
+  Tesla: ["Model S", "Model 3", "Model X", "Model Y", "Cybertruck"],
+  Toyota: ["Camry", "Corolla", "RAV4", "Highlander", "Tacoma", "Tundra", "Prius", "Avalon", "4Runner"],
+  Volkswagen: ["Jetta", "Passat", "Tiguan", "Atlas", "Golf", "Beetle", "ID.4"],
+  Volvo: ["S60", "S90", "XC40", "XC60", "XC90", "V60", "V90"]
+};
+
+
 export const timeToShopItems = [
     {
         title: "Ready to Sell?",
