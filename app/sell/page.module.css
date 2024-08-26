@@ -1,0 +1,125 @@
+.container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 60vh;
+  }
+  
+  .steps {
+    margin-bottom: 24px;
+  }
+  
+  .stepContent {
+    margin-top: 24px;
+  }
+  
+  .sectionTitle {
+    margin-bottom: 16px;
+  }
+  
+  .form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .buttonGroup {
+    margin-top: 24px;
+    text-align: right;
+  }
+  
+  .nextButton {
+    margin-left: 8px;
+  }
+  
+  .prevButton {
+    margin-right: 8px;
+  }
+  
+  .upload {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .reviewCard {
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .reviewImage {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .details {
+    padding-left: 16px;
+  }
+  
+  .finishButton {
+    margin-top: 24px;
+  }
+  /* page.module.css */
+
+.container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps {
+  margin-bottom: 24px;
+}
+
+.stepContent {
+  padding: 24px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.sectionTitle {
+  margin-bottom: 16px;
+}
+
+.form {
+  margin-bottom: 24px;
+}
+
+.buttonGroup {
+  margin-top: 24px;
+}
+
+.nextButton, .prevButton, .finishButton {
+  margin-right: 8px;
+}
+
+.upload {
+  margin-bottom: 24px;
+}
+
+.reviewCard {
+  margin-bottom: 24px;
+}
+
+.reviewImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.details {
+  margin-left: 16px;
+  display: flex;
+    flex-direction: column;
+}
+
+.finishButton {
+  margin-top: 24px;
+  display: block;
+  width: 100%;
+}
+.reviewImage {
+  border: 1px solid #ddd;
+  max-width: 100%;
+  height: auto;
+}
