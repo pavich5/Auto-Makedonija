@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f9;
+  }
+  
+  .formContainer {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form {
+    margin-top: 1rem;
+  }
+  
+  .switchButton {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .switchButton:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  

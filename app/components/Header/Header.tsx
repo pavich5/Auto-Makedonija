@@ -27,9 +27,12 @@ const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.logo} onClick={()=> {
-          router.push('/')
-        }}>
+        <div
+          className={styles.logo}
+          onClick={() => {
+            router.push("/");
+          }}
+        >
           <img alt="e" src={logo_url} />
           <p>Company Name</p>
         </div>
@@ -50,7 +53,16 @@ const Header = () => {
         <div className={styles.rightSection}>
           <div className={styles.account}>
             <HeartOutlined className={styles.icon} />
-            <span className={styles.accountText}>My Account</span>
+            <span
+              className={styles.accountText}
+              onClick={() => {
+                if (!isLoggedIn) {
+                  router.push("/login");
+                }
+              }}
+            >
+              My Account
+            </span>
           </div>
           <div className={styles.hamburger} onClick={showDrawer}>
             <MenuOutlined className={styles.icon} />
@@ -61,13 +73,13 @@ const Header = () => {
       <Drawer
         title={
           <div className={styles.logo}>
-          <img alt="e" src={logo_url} />
-          <p>Company Name</p>
-        </div>
+            <img alt="e" src={logo_url} />
+            <p>Company Name</p>
+          </div>
         }
         placement="right"
         onClose={onClose}
-        visible={visible}
+        open={visible}
         closable
       >
         {isLoggedIn ? (
@@ -82,7 +94,13 @@ const Header = () => {
             <span className={styles.userName}>{user.name}</span>
           </div>
         ) : (
-          <div className={styles.userInfo}>
+          <div
+            className={styles.userInfo}
+            onClick={() => {
+              setVisible(false);
+              router.push("/login");
+            }}
+          >
             <Image
               src="https://cdn-icons-png.flaticon.com/512/8801/8801434.png"
               alt="User Image"
@@ -91,24 +109,40 @@ const Header = () => {
               style={{ borderRadius: "50%" }}
             />
             <div className={styles.createUser}>
-              <span onClick={() => setVisible(false)} className={styles.userName}>Sign In</span>
-              <Link className={styles.userNameAccount} href="/" onClick={() => setVisible(false)}>
+              <span className={styles.userName}>Sign In</span>
+              <Link className={styles.userNameAccount} href="/">
                 Create an account
               </Link>
             </div>
           </div>
         )}
         <nav className={styles.drawerNav}>
-          <Link onClick={() => setVisible(false)} href="/shopping/inventory" className={styles.drawerLink}>
+          <Link
+            onClick={() => setVisible(false)}
+            href="/shopping/inventory"
+            className={styles.drawerLink}
+          >
             Search Cars
           </Link>
-          <Link onClick={() => setVisible(false)} href="/browse" className={styles.drawerLink}>
+          <Link
+            onClick={() => setVisible(false)}
+            href="/browse"
+            className={styles.drawerLink}
+          >
             Sell Your Car
           </Link>
-          <Link onClick={() => setVisible(false)} href="/about" className={styles.drawerLink}>
+          <Link
+            onClick={() => setVisible(false)}
+            href="/about"
+            className={styles.drawerLink}
+          >
             About Us
           </Link>
-          <Link onClick={() => setVisible(false)} href="/contact" className={styles.drawerLink}>
+          <Link
+            onClick={() => setVisible(false)}
+            href="/contact"
+            className={styles.drawerLink}
+          >
             Ownership
           </Link>
         </nav>
