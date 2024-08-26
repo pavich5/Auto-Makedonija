@@ -40,14 +40,11 @@ const Header = () => {
           <Link href="/shopping/inventory" className={styles.link}>
             Search Cars
           </Link>
-          <Link href="/browse" className={styles.link}>
+          <Link href="/sell" className={styles.link}>
             Sell Your Car
           </Link>
           <Link href="/about" className={styles.link}>
             About Us
-          </Link>
-          <Link href="/contact" className={styles.link}>
-            Ownership
           </Link>
         </nav>
         <div className={styles.rightSection}>
@@ -126,7 +123,7 @@ const Header = () => {
           </Link>
           <Link
             onClick={() => setVisible(false)}
-            href="/browse"
+            href="/sell"
             className={styles.drawerLink}
           >
             Sell Your Car
@@ -137,13 +134,6 @@ const Header = () => {
             className={styles.drawerLink}
           >
             About Us
-          </Link>
-          <Link
-            onClick={() => setVisible(false)}
-            href="/contact"
-            className={styles.drawerLink}
-          >
-            Ownership
           </Link>
         </nav>
       </Drawer>
