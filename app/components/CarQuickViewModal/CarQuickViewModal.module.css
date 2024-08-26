@@ -1,0 +1,54 @@
+
+  .modalContent {
+    padding: 20px;
+  }
+  
+  .modalBody {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .modalImage {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .details {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .details h2 {
+    margin-bottom: 16px;
+  }
+  
+  .detailItem {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .featuresSection {
+    margin-top: 16px;
+  }
+  
+  .featureCategory {
+    margin-bottom: 12px;
+  }
+  
+  .featureCategory strong {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .featureList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .learnMoreButton {
+    margin-top: 20px;
+  }
+  

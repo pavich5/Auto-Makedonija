@@ -18,6 +18,7 @@ import {
 } from "@ant-design/icons";
 import MobileFilters from "@/app/components/MobileFilters/MobileFilters";
 import NoResults from "@/app/components/NoResults";
+import CarQuickViewModal from "@/app/components/CarQuickViewModal/CarQuickViewModal";
 
 const { Option } = Select;
 
@@ -64,6 +65,7 @@ const CarSearch: React.FC = () => {
     useState<boolean>(false);
   const [isMobileFiltersVisable, setIsMobileFiltersVisable] =
     useState<boolean>(false);
+  const [showQuickViewModal,setShowQuickViewModal] = useState(false)
   const [mobileFiltersVisible, setMobileFiltersVisible] = useState({
     Price: false,
     "Make & Model": false,
@@ -441,9 +443,10 @@ const CarSearch: React.FC = () => {
                         View & Buy
                       </Button>
                       <div className={styles.buttonSection}>
-                        <Button className={styles.quickViewButton}>
+                        <Button className={styles.quickViewButton} onClick={()=> setShowQuickViewModal(true)}>
                           Quick View
                         </Button>
+                        <CarQuickViewModal car={car} isVisible={showQuickViewModal} onClose={()=> setShowQuickViewModal(false)}/>
                         <Button
                           className={styles.viewOrBuyButton}
                           type="primary"
