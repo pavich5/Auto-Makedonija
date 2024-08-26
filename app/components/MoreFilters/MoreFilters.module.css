@@ -1,0 +1,52 @@
+/* MoreFilters.module.css */
+.container {
+    padding: 24px;
+  }
+  
+  .section {
+    margin-bottom: 24px;
+  }
+  
+  .section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .ant-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .ant-checkbox-wrapper {
+    flex: 1 1 200px;
+    font-size: 16px;
+  }
+  
+  .colorOption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .colorExample {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .ant-select {
+    width: 100%;
+  }
+  
+  .ant-modal-header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .ant-modal-footer {
+    border-top: 1px solid #d9d9d9;
+    text-align: right;
+  }
+  

@@ -34,7 +34,7 @@ const Header = () => {
           <p>Company Name</p>
         </div>
         <nav className={styles.nav}>
-          <Link href="/" className={styles.link}>
+          <Link href="/shopping/inventory" className={styles.link}>
             Search Cars
           </Link>
           <Link href="/browse" className={styles.link}>
@@ -91,24 +91,24 @@ const Header = () => {
               style={{ borderRadius: "50%" }}
             />
             <div className={styles.createUser}>
-              <span className={styles.userName}>Sign In</span>
-              <Link className={styles.userNameAccount} href="/">
+              <span onClick={() => setVisible(false)} className={styles.userName}>Sign In</span>
+              <Link className={styles.userNameAccount} href="/" onClick={() => setVisible(false)}>
                 Create an account
               </Link>
             </div>
           </div>
         )}
         <nav className={styles.drawerNav}>
-          <Link href="/" className={styles.drawerLink}>
+          <Link onClick={() => setVisible(false)} href="/shopping/inventory" className={styles.drawerLink}>
             Search Cars
           </Link>
-          <Link href="/browse" className={styles.drawerLink}>
+          <Link onClick={() => setVisible(false)} href="/browse" className={styles.drawerLink}>
             Sell Your Car
           </Link>
-          <Link href="/sell" className={styles.drawerLink}>
+          <Link onClick={() => setVisible(false)} href="/about" className={styles.drawerLink}>
             About Us
           </Link>
-          <Link href="/contact" className={styles.drawerLink}>
+          <Link onClick={() => setVisible(false)} href="/contact" className={styles.drawerLink}>
             Ownership
           </Link>
         </nav>

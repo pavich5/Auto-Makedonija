@@ -1,0 +1,156 @@
+.modal .ant-modal-content {
+  max-width: 400px;
+  margin: auto;
+}
+
+.bodyTypeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.bodyTypeButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .modal .ant-modal-content {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .bodyTypeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .bodyTypeButton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .bodyTypeButton:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+
+  .bodyTypeButton:not(:disabled):hover {
+    background-color: #e6f7ff;
+    border-color: #1890ff;
+  }
+
+  .bodyTypeIcon {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #000000;
+  }
+
+  .bodyTypeButton span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  padding: 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.bodyTypeButton:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.bodyTypeButton:not(:disabled):hover {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+}
+
+.bodyTypeImage {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.bodyTypeButton span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.modal .ant-modal-content {
+  max-width: 400px;
+  margin: auto;
+}
+
+.bodyTypeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.bodyTypeButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 50px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.bodyTypeButton:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.bodyTypeButton:not(:disabled):hover {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+}
+
+.bodyTypeButton.selected {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: white;
+  fill: black;
+}
+
+.bodyTypeIcon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.bodyTypeIcon.bodyTypeButton.selected {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.bodyTypeButton span {
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.footer {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row-reverse;
+}

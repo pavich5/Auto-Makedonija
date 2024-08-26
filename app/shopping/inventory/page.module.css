@@ -1,0 +1,253 @@
+.container {
+  width: 100%;
+  padding: 40px;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  margin-right: 20px;
+  height: 50px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.carList {
+  margin-top: 20px;
+}
+
+.priceSection {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.7rem;
+  color: rgb(6, 60, 74);
+  font-weight: 400;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  height: 70px;
+}
+
+.mileage {
+  font-weight: 500;
+}
+.carImage {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoTitle {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.infoCount {
+  font-size: 0.8em;
+}
+
+.controlsSection {
+  display: flex;
+  gap: 15px;
+}
+
+.sortingDropdown,
+.locationFilter {
+  display: flex;
+  align-items: center;
+}
+.carCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.8s ease;
+}
+
+.carCard:hover {
+  transform: translateY(-5px);
+  transition: transform 0.8s ease;
+}
+
+.carImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.mileage {
+  font-size: 14px;
+  color: #666;
+}
+
+.priceSection {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.financeDetails {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.buttonSection {
+  display: none;
+  margin-top: 16px;
+}
+
+.carCard:hover .buttonSection {
+  transition: transform 0.8s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quickViewButton {
+  background-color: #f0f0f0;
+  border: none;
+  width: 47%;
+  height: 45px;
+}
+
+.viewOrBuyButton {
+  background-color: #007bff;
+  border: none;
+  width: 47%;
+  height: 45px;
+}
+.buttonSection {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.carCard:hover .buttonSection {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.viewOrBuyButtonMobile {
+  display: none;
+}
+
+.dealerPrice {
+  color: rgb(88, 120, 128);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.sortAndFilterMobile{
+  display: none;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .suffixItems {
+    display: none;
+  }
+
+  .carList {
+    padding: 10px;
+  }
+  .carList > * {
+    background-color: rgb(255, 255, 255);
+    padding: 1.6rem;
+    border: 0px;
+    border-radius: 0.8rem;
+    box-shadow: none;
+  }
+  .searchInput {
+    margin-right: 0;
+    width: 90%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 0.8rem;
+    border: 0px;
+    border-radius: 0.8rem;
+    box-shadow: rgba(40, 38, 49, 0.06) 0px 1px 2px,
+      rgba(40, 38, 49, 0.1) 0px 1px 3px;
+  }
+  .searchBar {
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .headerContainer {
+    flex-direction: row;
+    background-color: #f8f9fa;
+    box-shadow: none;
+  }
+  .infoCount {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .infoSection {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .sortingDropdown {
+    display: none;
+  }
+  .buttonSection {
+    display: none;
+  }
+  .viewOrBuyButtonMobile {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    height: 50px;
+    margin-top: 10px;
+    background-color: rgb(3, 117, 211);
+    font-size: 1rem;
+    color: white;
+  }
+  .sortAndFilterMobile {
+    display: block;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+}
+
+}

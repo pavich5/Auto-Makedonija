@@ -1,0 +1,76 @@
+.drawerContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .sortTitle {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sortValue {
+    color: #1890ff;
+  }
+  
+  .filterList {
+    flex: 1;
+    padding: 0;
+    overflow-y: auto;
+  }
+  
+  .filterItem {
+    padding: 16px;
+    border-bottom: 1px solid #e8e8e8;
+    cursor: pointer;
+  }
+  
+  .filterItem:last-child {
+    border-bottom: none;
+  }
+  
+  .footer {
+    padding: 16px;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .vehiclesCount {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 8px;
+
+    width: 100%;
+  }
+  
+  .closeButton {
+    border: 1px solid #d9d9d9;
+    width: 50%;
+    height: 50px;
+    font-weight: 700;
+
+  }
+  
+  .applyButton {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    width: 50%;
+    height: 50px;
+    font-weight: 700;
+  }
+  

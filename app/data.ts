@@ -1,3 +1,254 @@
+export const dummyData = [
+  {
+    id: 1,
+    title: '2020 Chevrolet Blazer 2LT',
+    vin: '3GNKBCRSXL5676890',
+    dealer: 'JAMES-MARTIN CHEVROLET, INC.',
+    distance: '3 miles',
+    price: 20714,
+    monthly: '$333/mo',
+    downPayment: '$2,000',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fjmchevybuick%2F3gnkbcrsxls676890%2F20240822133955.S2NL9AJ6%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'SUV',
+    make: 'Chevrolet',
+    model: 'Blazer 2LT',
+    year: 2020,
+    mileage: 30000,
+    driveType: '2WD',
+    transmissionType: 'Automatic',
+    engineCylinders: 6,
+    fuelType: 'Gasoline',
+    mpg: 20,
+    exteriorColor: 'Red',
+    interiorColor: 'Black',
+    numberOfSeats: 5,
+    features: {
+      technology: ['Android Auto / Apple Carplay', 'Bluetooth Audio'],
+      safety: ['Blind Spot Warning', 'Automatic Emergency Braking'],
+      premium: ['Leather-appointed Seats'],
+      convenience: ['Keyless Ignition', 'Navigation System'],
+      utility: ['Tow Hitch']
+    }
+  },
+  {
+    id: 2,
+    title: '2022 Chevrolet Trailblazer LS',
+    vin: 'KL79MN5LNBO47617',
+    dealer: 'JAMES-MARTIN CHEVROLET, INC.',
+    distance: '3 miles',
+    price: 20778,
+    monthly: '$334/mo',
+    downPayment: '$2,000',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fjmchevybuick%2F1gnskckdxmr358381%2F20240802121509.DHSOBFLA%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'SUV',
+    make: 'Chevrolet',
+    model: 'Trailblazer LS',
+    year: 2022,
+    mileage: 25000,
+    driveType: 'FWD',
+    transmissionType: 'Automatic',
+    engineCylinders: 4,
+    fuelType: 'Gasoline',
+    mpg: 28,
+    exteriorColor: 'Blue',
+    interiorColor: 'Gray',
+    numberOfSeats: 5,
+    features: {
+      technology: ['Android Auto / Apple Carplay', 'Bluetooth Audio', 'WiFi Capability'],
+      safety: ['Lane Keep Assistance', 'Parking Collision Warning'],
+      premium: ['Sunroof'],
+      convenience: ['Adaptive Cruise Control'],
+      utility: ['Third Row Seat']
+    }
+  },
+  {
+    id: 3,
+    title: '2019 Honda Civic EX',
+    vin: '19XFC2F59KE208267',
+    dealer: 'Honda of Downtown',
+    distance: '7 miles',
+    price: 18900,
+    monthly: '$299/mo',
+    downPayment: '$1,800',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fedrinkechevrolet%2F1gtg6fenxn1165124%2F20240816142411.L3FK8J2C%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'Sedan',
+    make: 'Honda',
+    model: 'Civic EX',
+    year: 2019,
+    mileage: 20000,
+    driveType: 'FWD',
+    transmissionType: 'Automatic',
+    engineCylinders: 4,
+    fuelType: 'Gasoline',
+    mpg: 32,
+    exteriorColor: 'White',
+    interiorColor: 'Gray',
+    numberOfSeats: 5,
+    features: {
+      technology: ['Bluetooth Audio', 'Backup Camera'],
+      safety: ['Lane Departure Warning', 'Adaptive Cruise Control'],
+      premium: ['Heated Front Seats'],
+      convenience: ['Remote Start', 'Keyless Ignition'],
+      utility: ['Foldable Rear Seats']
+    }
+  },
+  {
+    id: 4,
+    title: '2021 Toyota Camry LE',
+    vin: '4T1C11AK2MU577965',
+    dealer: 'Toyota of Hollywood',
+    distance: '10 miles',
+    price: 21450,
+    monthly: '$349/mo',
+    downPayment: '$2,000',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fedrinkechevrolet%2Fkl4mmds28nb016836%2F20240822025548.SONCVO3D%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'Sedan',
+    make: 'Toyota',
+    model: 'Camry LE',
+    year: 2021,
+    mileage: 15000,
+    driveType: 'FWD',
+    transmissionType: 'Automatic',
+    engineCylinders: 4,
+    fuelType: 'Gasoline',
+    mpg: 30,
+    exteriorColor: 'Silver',
+    interiorColor: 'Black',
+    numberOfSeats: 5,
+    features: {
+      technology: ['Bluetooth Audio', 'Apple Carplay'],
+      safety: ['Lane Keep Assist', 'Automatic Emergency Braking'],
+      premium: ['Power Driver Seat'],
+      convenience: ['Keyless Entry', 'Automatic Climate Control'],
+      utility: ['Split-Folding Rear Seat']
+    }
+  },
+  {
+    id: 5,
+    title: '2021 Ford F-150 XLT',
+    vin: '1FTEW1EP8MKD46284',
+    dealer: 'Ford of Downtown',
+    distance: '15 miles',
+    price: 32900,
+    monthly: '$549/mo',
+    downPayment: '$3,500',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fgenesischevrolet%2F3gnkbcrs2ms570001%2F20240821214405.I4XUAOMX%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'Truck',
+    make: 'Ford',
+    model: 'F-150 XLT',
+    year: 2021,
+    mileage: 12000,
+    driveType: '4WD',
+    transmissionType: 'Automatic',
+    engineCylinders: 8,
+    fuelType: 'Gasoline',
+    mpg: 18,
+    exteriorColor: 'Black',
+    interiorColor: 'Gray',
+    numberOfSeats: 5,
+    features: {
+      technology: ['Bluetooth Audio', 'Apple Carplay'],
+      safety: ['Rearview Camera', 'Blind Spot Monitoring'],
+      premium: ['Leather Seats'],
+      convenience: ['Remote Start', 'Keyless Ignition'],
+      utility: ['Tow Package', 'Bed Liner']
+    }
+  },
+  {
+    id: 6,
+    title: '2020 Nissan Altima SV',
+    vin: '1N4BL4BV7LC137228',
+    dealer: 'Nissan of South Bay',
+    distance: '12 miles',
+    price: 20900,
+    monthly: '$340/mo',
+    downPayment: '$2,200',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fjmchevybuick%2F3gnaxkev6ml333755%2F20240724183529.CKISJOMM%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'Sedan',
+    make: 'Nissan',
+    model: 'Altima SV',
+    year: 2020,
+    mileage: 22000,
+    driveType: 'FWD',
+    transmissionType: 'Automatic',
+    engineCylinders: 4,
+    fuelType: 'Gasoline',
+    mpg: 29,
+    exteriorColor: 'Gray',
+    interiorColor: 'Black',
+    numberOfSeats: 5,
+    features: {
+      technology: ['Bluetooth Audio', 'Apple Carplay', 'Remote Start'],
+      safety: ['Blind Spot Monitoring', 'Automatic Emergency Braking'],
+      premium: ['Power Driver Seat'],
+      convenience: ['Keyless Entry', 'Dual-Zone Climate Control'],
+      utility: ['Foldable Rear Seats']
+    }
+  },
+  {
+    id: 7,
+    title: '2021 Hyundai Kona SEL',
+    vin: 'KM8K12AA6MU596412',
+    dealer: 'Hyundai of Los Angeles',
+    distance: '20 miles',
+    price: 22900,
+    monthly: '$365/mo',
+    downPayment: '$2,500',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fjmchevybuick%2Fkl79mrsl8nb133587%2F20240724183646.KQBZNE3X%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'SUV',
+    make: 'Audi',
+    model: 'Q7',
+    year: 2021,
+    mileage: 18000,
+    driveType: 'AWD',
+    transmissionType: 'Automatic',
+    engineCylinders: 4,
+    fuelType: 'Gasoline',
+    mpg: 27,
+    exteriorColor: 'Blue',
+    interiorColor: 'Gray',
+    numberOfSeats: 5,
+    features: {
+      technology: ['Bluetooth Audio', 'Apple Carplay', 'Android Auto'],
+      safety: ['Lane Keeping Assist', 'Rear Cross-Traffic Alert'],
+      premium: ['Sunroof'],
+      convenience: ['Keyless Entry', 'Push Button Start'],
+      utility: ['Roof Rails']
+    }
+  },
+  {
+    id: 8,
+    title: '2022 Kia Telluride EX',
+    vin: '5XYP54HC9NG200123',
+    dealer: 'Kia of Glendale',
+    distance: '25 miles',
+    price: 36900,
+    monthly: '$615/mo',
+    downPayment: '$4,000',
+    image: 'https://www.carbravo.com/carbravo/shopping/inventory/_next/image?url=https%3A%2F%2Fcdn.impel.io%2Fswipetospin-viewers%2Fjmchevybuick%2F3c4njdcb8lt168337%2F20240820233905.NPRTWVQL%2Fcloseups%2Fsrp_bg_full_removal.jpg&w=1920&q=75',
+    bodyType: 'SUV',
+    make: 'Kia',
+    model: 'Telluride EX',
+    year: 2022,
+    mileage: 10000,
+    driveType: 'AWD',
+    transmissionType: 'Automatic',
+    engineCylinders: 6,
+    fuelType: 'Gasoline',
+    mpg: 23,
+    exteriorColor: 'Green',
+    interiorColor: 'Brown',
+    numberOfSeats: 7,
+    features: {
+      technology: ['Apple Carplay', 'Android Auto', 'Navigation System'],
+      safety: ['Blind Spot Monitoring', 'Rear Cross-Traffic Alert'],
+      premium: ['Leather Seats', 'Sunroof'],
+      convenience: ['Keyless Entry', 'Push Button Start'],
+      utility: ['Power Liftgate', 'Roof Rails']
+    }
+  }
+];
+
 
 export const vehiclesTypes = [
     {
@@ -63,6 +314,32 @@ export const timeToShopItems = [
         link: "/car"
     },
 ]
+
+export interface Filters {
+  bodyType: string[];
+  price: number[];
+  makeModel: {
+    brands: string[];
+    models: string[];
+  };
+  yearRange: [number, number];
+  mileageRange: [number, number];
+  driveType: string[];
+  transmissionType: string[];
+  engineCylinders: number[];
+  fuelType: string[];
+  mpgRange: [number, number];
+  features: {
+    technology: string[];
+    safety: string[];
+    premium: string[];
+    convenience: string[];
+    utility: string[];
+  };
+  exteriorColor: string[];
+  interiorColor: string[];
+  numberOfSeats: number[];
+};
 
 
 export const resources = [

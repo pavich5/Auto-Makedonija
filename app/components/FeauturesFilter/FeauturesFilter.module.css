@@ -1,0 +1,46 @@
+.container {
+    padding: 24px;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  
+  .section {
+    margin-bottom: 24px;
+  }
+  
+  .section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .ant-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+  }
+  
+  .ant-checkbox-wrapper {
+    flex: 1 1 200px; 
+    font-size: 16px;
+  }
+  
+  .ant-checkbox-wrapper:hover {
+    background-color: #f0f0f0; 
+    border-radius: 4px;
+  }
+  
+  .modal {
+    border-radius: 8px; 
+  }
+  
+  .ant-modal-header {
+    background-color: #f7f7f7; 
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .ant-modal-footer {
+    border-top: 1px solid #d9d9d9;
+    text-align: right;
+  }
+  

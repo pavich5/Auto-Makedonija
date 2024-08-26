@@ -1,3 +1,4 @@
+"use client"
 import { RightOutlined } from "@ant-design/icons";
 import styles from "./page.module.css";
 import { Button, Collapse } from "antd";
@@ -5,7 +6,10 @@ import { timeToShopItems,faqItems  } from "./data";
 import Link from "next/link";
 import FindNextCarSection from "./components/LandingPage/FindNextCarSection";
 import HelpfulResources from "./components/LandingPage/HelpfulResources";
+import { useRouter } from "next/navigation";
+
 export default function Home() {
+  const router = useRouter()
   return (
     <>
       <section>
@@ -22,7 +26,7 @@ export default function Home() {
             <h1>Feel the usedphoria.</h1>
             <p>A better way to buy.</p>
             <p>Used vehicles are here</p>
-            <Button type="primary" className={styles.shopNowButton}>
+            <Button type="primary" className={styles.shopNowButton} onClick={()=> router.push('/shopping/inventory')}>
               Shop Now
             </Button>
           </div>
