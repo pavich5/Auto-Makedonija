@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Checkbox, InputNumber, Slider, Drawer, Button } from 'antd';
+import { Modal, Checkbox, Slider, Drawer, Button } from 'antd';
 import styles from './PerformanceFilter.module.css';
 
 const { Group: CheckboxGroup } = Checkbox;

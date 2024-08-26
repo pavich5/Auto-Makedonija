@@ -249,5 +249,10 @@
     height: 50px;
     font-weight: 700;
 }
+.carCard:hover .buttonSection {
+  display: none;
+ 
+}
+
 
 }
