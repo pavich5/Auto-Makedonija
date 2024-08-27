@@ -53,7 +53,7 @@ const CarQuickViewModal: React.FC<CarQuickViewModalProps> = ({ isVisible, onClos
       >
         <div className={styles.modalContent}>
           <div className={styles.modalBody}>
-            <img src={car.image} alt={car.title} className={styles.modalImage} />
+            <img src={car.image[0]} alt={car.title} className={styles.modalImage} />
             <div className={styles.details}>
               <h2>{car.title}</h2>
               <div className={styles.detailItem}>
