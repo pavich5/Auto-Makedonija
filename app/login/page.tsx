@@ -20,6 +20,7 @@ const LoginSignUpPage = () => {
 
     if (values.email === 'user@example.com' && values.password === 'password') { // waiting until backend is made
       console.log('Login Values:', values);
+      localStorage.setItem('isLoggedIn', 'true'); // Save login state to local storage
       notification.success({
         message: 'Login Successful',
         description: 'You have successfully logged in!',
@@ -40,6 +41,10 @@ const LoginSignUpPage = () => {
           className={styles.form}
           layout="vertical"
           onFinish={onFinish}
+          initialValues={{
+            email: 'user@example.com',
+            password: 'password',
+          }}
         >
           <Form.Item
             name="email"

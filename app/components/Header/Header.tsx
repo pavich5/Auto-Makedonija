@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { HeartOutlined, MenuOutlined } from "@ant-design/icons";
@@ -17,6 +17,16 @@ const Header = () => {
       "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/corporate-user-icon.png",
   };
   const router = useRouter();
+
+  useEffect(() => {
+    const loginState = localStorage.getItem('isLoggedIn');
+    if (loginState === 'true') {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
+
   const showDrawer = () => {
     setVisible(true);
   };

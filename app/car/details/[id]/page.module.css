@@ -1,0 +1,35 @@
+.container {
+  height: 88vh;
+  padding: 25px;
+}
+.topImage {
+  margin-bottom: 8px; 
+}
+
+.topImage img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.bottomImage {
+  display: flex;
+  gap: 8px; 
+  max-height: 250px;
+
+}
+
+.bottomImage img {
+  width: 50%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 25px;
+  }
+}

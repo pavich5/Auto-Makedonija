@@ -19,10 +19,9 @@ import {
 import MobileFilters from "@/app/components/MobileFilters/MobileFilters";
 import NoResults from "@/app/components/NoResults";
 import CarQuickViewModal from "@/app/components/CarQuickViewModal/CarQuickViewModal";
+import { useRouter } from "next/navigation";
 
 const { Option } = Select;
-
-
 
 const CarSearch: React.FC = () => {
   const [filters, setFilters] = useState<Filters>({
@@ -50,7 +49,7 @@ const CarSearch: React.FC = () => {
     interiorColor: [],
     numberOfSeats: [],
   });
-
+  const router = useRouter();
   const [sortOption, setSortOption] = useState<string>("price-asc");
   const [isPriceFilterVisible, setPriceFilterVisible] =
     useState<boolean>(false);
@@ -65,7 +64,7 @@ const CarSearch: React.FC = () => {
     useState<boolean>(false);
   const [isMobileFiltersVisable, setIsMobileFiltersVisable] =
     useState<boolean>(false);
-  const [showQuickViewModal,setShowQuickViewModal] = useState(false)
+  const [showQuickViewModal, setShowQuickViewModal] = useState(false);
   const [mobileFiltersVisible, setMobileFiltersVisible] = useState({
     Price: false,
     "Make & Model": false,
@@ -75,6 +74,7 @@ const CarSearch: React.FC = () => {
     "More Filters": false,
     "Body Type": false,
   });
+  const [selectedCar, setSelectedCar] = useState(null);
 
   const filteredCars = dummyData.filter((car) => {
     const matchesBodyType =
@@ -179,6 +179,11 @@ const CarSearch: React.FC = () => {
     }));
   };
 
+  const handleQuickView = (car: any) => {
+    setSelectedCar(car);
+    setShowQuickViewModal(true);
+  };
+
   const handleFilterChange = (
     value: string[] | string,
     filterType: keyof Omit<Filters, "yearRange" | "mileageRange" | "mpgRange">
@@ -188,13 +193,12 @@ const CarSearch: React.FC = () => {
         ...prevFilters,
         features: value as unknown as Filters["features"],
       }));
-      return
-    }  
-      setFilters((prevFilters) => ({
-        ...prevFilters,
-        [filterType]: Array.isArray(value) ? value : [value],
-      }));
-    
+      return;
+    }
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      [filterType]: Array.isArray(value) ? value : [value],
+    }));
   };
 
   const handlePriceChange = (value: [number, number]) => {
@@ -430,7 +434,7 @@ const CarSearch: React.FC = () => {
                     <>
                       <img
                         alt={car.title}
-                        src={car.image}
+                        src={car.images[0]}
                         className={styles.carImage}
                       />
                       <div className={styles.priceSection}>
@@ -439,17 +443,30 @@ const CarSearch: React.FC = () => {
                           ${car.price.toLocaleString()}
                         </p>
                       </div>
-                      <Button className={styles.viewOrBuyButtonMobile}>
+                      <Button
+                        className={styles.viewOrBuyButtonMobile}
+                        onClick={() => router.push(`/car/details/${car.id}`)}
+                      >
                         View & Buy
                       </Button>
                       <div className={styles.buttonSection}>
-                        <Button className={styles.quickViewButton} onClick={()=> setShowQuickViewModal(true)}>
+                        <Button
+                          className={styles.quickViewButton}
+                          onClick={() => handleQuickView(car)}
+                        >
                           Quick View
                         </Button>
-                        <CarQuickViewModal car={car} isVisible={showQuickViewModal} onClose={()=> setShowQuickViewModal(false)}/>
+
+                        <CarQuickViewModal
+                          car={selectedCar}
+                          isVisible={showQuickViewModal}
+                          onClose={() => setShowQuickViewModal(false)}
+                        />
+
                         <Button
                           className={styles.viewOrBuyButton}
                           type="primary"
+                          onClick={() => router.push(`/car/details/${car.id}`)}
                         >
                           View & Buy
                         </Button>

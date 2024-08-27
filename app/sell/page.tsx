@@ -117,7 +117,6 @@ const SellYourCar: React.FC = () => {
         'title',
         'transmissionType',
         'vin',
-
       ];
       return requiredFields.some(field => !fieldValues[field]);
     }
