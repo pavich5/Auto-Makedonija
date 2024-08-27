@@ -102,6 +102,9 @@
   width: 100%;
   border-radius: 8px;
   margin-top: 16px;
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: cover;
 }
 
 .mileage {
