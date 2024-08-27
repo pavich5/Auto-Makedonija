@@ -2,12 +2,13 @@
 import React, { useState } from 'react';
 import { Button, Input, Form, Typography, notification } from 'antd';
 import styles from './page.module.css';
+import { useRouter } from 'next/navigation';
 
 const { Title } = Typography;
 
 const LoginSignUpPage = () => {
   const [isSignUp, setIsSignUp] = useState(false);
-
+  const router = useRouter()
   const onFinish = (values: any) => {
     if (isSignUp) {
       console.log('Sign Up Values:', values);
@@ -20,7 +21,8 @@ const LoginSignUpPage = () => {
 
     if (values.email === 'user@example.com' && values.password === 'password') { // waiting until backend is made
       console.log('Login Values:', values);
-      localStorage.setItem('isLoggedIn', 'true'); // Save login state to local storage
+      localStorage.setItem('isLoggedIn', 'true'); 
+      router.push('/')
       notification.success({
         message: 'Login Successful',
         description: 'You have successfully logged in!',
