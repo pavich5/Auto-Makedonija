@@ -180,8 +180,8 @@ const CarSearch: React.FC = () => {
   };
 
   const handleQuickView = (car: any) => {
-    setSelectedCar(car);
-    setShowQuickViewModal(true);
+    // setSelectedCar(car);
+    // setShowQuickViewModal(true);
   };
 
   const handleFilterChange = (
@@ -452,7 +452,7 @@ const CarSearch: React.FC = () => {
                       <div className={styles.buttonSection}>
                         <Button
                           className={styles.quickViewButton}
-                          onClick={() => handleQuickView(car)}
+                          onClick={() => router.push(`/car/details/${car.id}`)}
                         >
                           Quick View
                         </Button>

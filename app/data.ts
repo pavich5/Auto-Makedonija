@@ -898,7 +898,7 @@ export const timeToShopItems = [
     link: "/shopping/inventory",
   },
   {
-    title: "Balance your budget",
+    title: "Shop with us",
     description: "Find the right fit for your wallet.",
     linkText: "Estimate Payments",
     image:

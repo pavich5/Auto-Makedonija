@@ -1,5 +1,6 @@
 .container {
-  height: 88vh;
+  height: auto;
+  margin-bottom: 100px;
   padding: 25px;
 }
 .topImage {
