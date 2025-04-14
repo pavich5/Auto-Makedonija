@@ -936,7 +936,7 @@ export interface Filters {
 export const resources = [
   {
     id: 1,
-    title: "Understanding Vehicle Financing",
+    title: "Understanding Financing",
     description: "Learn about financing options available for buying a car.",
     link: "https://www.nada.org/media/3211/download?inline",
     image:

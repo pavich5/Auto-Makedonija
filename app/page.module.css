@@ -219,7 +219,7 @@
   padding: 40px 20px;
   background-color: #f9f9f9;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .faqSectionWrapper{
@@ -240,7 +240,7 @@
 .faqSection h2,
 .contactSection h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #333;
 }
 .faqSection h2 {
