@@ -157,4 +157,8 @@
     padding: 3px;
     width: 70vw;
   }
+  .stepContent{
+    padding: 0;
+  }
+  
 }

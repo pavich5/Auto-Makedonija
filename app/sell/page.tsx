@@ -181,7 +181,6 @@ const SellYourCar: React.FC = () => {
                   <InputNumber
                     min={1}
                     max={100000}
-                    defaultValue={1000}
                     placeholder="Enter Price"
                     style={{ width: "100%" }}
                   />
@@ -198,7 +197,6 @@ const SellYourCar: React.FC = () => {
                   <InputNumber
                     min={1}
                     max={500000}
-                    defaultValue={1000}
                     placeholder="Enter Mileage"
                     style={{ width: "100%" }}
                   />
@@ -303,7 +301,6 @@ const SellYourCar: React.FC = () => {
                   <InputNumber
                     min={1950}
                     max={2025}
-                    defaultValue={2024}
                     placeholder="Enter Year"
                     style={{ width: "100%" }}
                   />
@@ -405,7 +402,6 @@ const SellYourCar: React.FC = () => {
                   <InputNumber
                     min={1}
                     max={50}
-                    defaultValue={10}
                     placeholder="Enter Estimated MPG"
                     style={{ width: "100%" }}
                   />
@@ -543,118 +539,124 @@ const SellYourCar: React.FC = () => {
         )}
 
         {currentStep === 2 && (
-          <Card title="Review Car Details" className={styles.reviewCard}>
-            <Row gutter={16} className={styles.cardRow}>
-              <Col span={12}>
-                {formData.image ? (
-                  <Image
-                    src={formData.image}
-                    alt="Car"
-                    className={styles.reviewImage}
-                    height={150}
-                    width={200}
-                  />
-                ) : (
-                  <Text>No image uploaded</Text>
-                )}
-              </Col>
-              <Col span={12} className={styles.detailsRow}>
-                <div className={styles.details}>
-                  <div className={styles.detailsWrapper}>
-                    <Title level={4}>Title: {formData.title}</Title>
-                    <div>
-                      <p>VIN: &nbsp;</p>
-                      <p>{formData.vin}</p>
-                    </div>
-                    <div>
-                      <p>Price:&nbsp;</p>
-                      <p>${formData.price}</p>
-                    </div>
-                    <div>
-                      <p>Mileage:&nbsp;</p>
-                      <p>{formData.mileage} miles</p>
-                    </div>
-                    <div>
-                      <p>Dealer:&nbsp;</p>
-                      <p>{formData.dealer}</p>
-                    </div>
-                    <div>
-                      <p>Distance:&nbsp;</p>
-                      <p>{formData.distance}</p>
-                    </div>
-                    <div>
-                      <p>Body Type:&nbsp;</p>
-                      <p>{formData.bodyType}</p>
-                    </div>
-                    <div>
-                      <p>Make:&nbsp;</p>
-                      <p>{formData.make}</p>
-                    </div>
-                    <div>
-                      <p>Model:&nbsp;</p>
-                      <p>{formData.model}</p>
-                    </div>
-                    <div>
-                      <p>Year:&nbsp;</p>
-                      <p>{formData.year}</p>
-                    </div>
-                    <div>
-                      <p>Drive Type:&nbsp;</p>
-                      <p>{formData.driveType}</p>
-                    </div>
-                    <div>
-                      <p>Transmission Type:&nbsp;</p>
-                      <p>{formData.transmissionType}</p>
-                    </div>
-                    <div>
-                      <p>Engine Cylinders:&nbsp;</p>
-                      <p>{formData.engineCylinders}</p>
-                    </div>
-                    <div>
-                      <p>Fuel Type:&nbsp;</p>
-                      <p>{formData.fuelType}</p>
-                    </div>
-                    <div>
-                      <p>MPG:&nbsp;</p>
-                      <p>{formData.mpg}</p>
-                    </div>
-                    <div>
-                      <p>Exterior Color:&nbsp;</p>
-                      <p>{formData.exteriorColor}</p>
-                    </div>
-                    <div>
-                      <p>Interior Color:&nbsp;</p>
-                      <p>{formData.interiorColor}</p>
-                    </div>
-                    <div>
-                      <p>Number of Seats:&nbsp;</p>
-                      <p>{formData.numberOfSeats}</p>
-                    </div>
-                    <div>
-                      <p>Phone:&nbsp;</p>
-                      <p>{formData.phone}</p>
-                    </div>
-                    <div>
-                      <p>Email:&nbsp;</p>
-                      <p>{formData.email}</p>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-            <div className={styles.buttonGroup}>
-              <Button onClick={handlePrevious} className={styles.prevButton}>
-                Previous
-              </Button>
-              <Button
-                type="primary"
-                onClick={handleNext}
-                className={styles.nextButton}
-              >
-                Next
-              </Button>
-            </div>
-          </Card>
+          <Card
+  title="Review Car Details"
+  style={{
+    borderRadius: 12,
+    maxWidth: 900,
+    margin: "0 auto",
+  }}
+>
+  {formData.image ? (
+    <Image
+      src={formData.image}
+      alt="Car"
+      width="100%"
+      height={250}
+      style={{
+        objectFit: "cover",
+        borderRadius: 8,
+        marginBottom: 32,
+        maxHeight: 300,
+      }}
+    />
+  ) : (
+    <Text>No image uploaded</Text>
+  )}
+
+  <div
+    style={{
+      overflowX: "auto",
+      width: "100%",
+    }}
+  >
+    <table
+      style={{
+        width: "100%",
+        borderCollapse: "separate",
+        borderSpacing: "0 12px",
+        minWidth: 320,
+      }}
+    >
+      <tbody>
+        {[
+          ["Title", formData.title],
+          ["VIN", formData.vin],
+          ["Price", `$${formData.price}`],
+          ["Mileage", `${formData.mileage} miles`],
+          ["Dealer", formData.dealer],
+          ["Distance", formData.distance],
+          ["Body Type", formData.bodyType],
+          ["Make", formData.make],
+          ["Model", formData.model],
+          ["Year", formData.year],
+          ["Drive Type", formData.driveType],
+          ["Transmission", formData.transmissionType],
+          ["Engine Cylinders", formData.engineCylinders],
+          ["Fuel Type", formData.fuelType],
+          ["MPG", formData.mpg],
+          ["Exterior Color", formData.exteriorColor],
+          ["Interior Color", formData.interiorColor],
+          ["Seats", formData.numberOfSeats],
+          ["Phone", formData.phone],
+          ["Email", formData.email],
+        ].map(([label, value]) => (
+          <tr
+            key={label}
+            style={{
+              background: "#f9f9f9",
+              borderRadius: 8,
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+            }}
+          >
+            <td
+              style={{
+                fontWeight: 600,
+                padding: "12px 16px",
+                flex: "1 1 40%",
+              }}
+            >
+              {label}:
+            </td>
+            <td
+              style={{
+                padding: "12px 16px",
+                flex: "1 1 55%",
+                color: "#555",
+              }}
+            >
+              {value}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <div
+    style={{
+      marginTop: 32,
+      display: "flex",
+      justifyContent: "space-between",
+      flexWrap: "wrap",
+      gap: 12,
+    }}
+  >
+    <Button onClick={handlePrevious} style={{ flex: 1, minWidth: 120 }}>
+      Previous
+    </Button>
+    <Button
+      type="primary"
+      onClick={handleNext}
+      style={{ flex: 1, minWidth: 120 }}
+    >
+      Next
+    </Button>
+  </div>
+</Card>
+
         )}
 
         {currentStep === 3 && (
