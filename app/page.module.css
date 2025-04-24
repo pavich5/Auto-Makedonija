@@ -300,6 +300,10 @@
   margin-bottom: 25px;
 }
 
+.backgroundImage{
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .heroSection {
@@ -324,8 +328,17 @@
 
 
   .backgroundVideo {
-    left: -100%;
-    width: 200%; 
+    display: none;
+  }
+  .backgroundImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    display: block;
   }
 
   .shopNowButton {

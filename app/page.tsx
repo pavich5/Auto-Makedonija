@@ -22,6 +22,7 @@ export default function Home() {
             muted
             className={styles.backgroundVideo}
           />
+          <img src="https://www.shutterstock.com/image-photo/blur-view-row-new-modern-600nw-1431757718.jpg" alt="" className={styles.backgroundImage} />
           <div className={styles.content}>
             <h1>Feel the usedphoria.</h1>
             <p>A better way to buy.</p>

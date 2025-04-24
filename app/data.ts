@@ -477,7 +477,7 @@ export const dummyData = [
     monthly: "$849/mo",
     downPayment: "$5,000",
     images: [
-      "https://content.homenetiol.com/2000292/2143540/0x0/0d75834a3a404cd38c29cdb0b3afdcc6.jpg",
+      "https://file.kelleybluebookimages.com/kbb/base/house/2022/2022-Audi-Q5-FrontSide_AQQ52201_640x480.jpg",
       "https://www.usnews.com/object/image/00000186-7564-d38f-abae-f76cd3cd0000/2024-buick-encore-gx-avenir-007.jpg?update-time=1677007253064&size=responsive640",
       "https://i.insider.com/5ef4fe145af6cc651e2e1977?width=750&format=jpeg&auto=webp",
     ],
@@ -516,7 +516,7 @@ export const dummyData = [
     monthly: "$429/mo",
     downPayment: "$2,900",
     images: [
-      "https://content.homenetiol.com/2000292/2143540/0x0/15eac8d3d51249d7a50b972c2d029a60.jpg",
+      "https://hips.hearstapps.com/hmg-prod/images/2020-honda-accord-mmp-1-1568824260.jpg?crop=0.866xw:0.731xh;0.103xw,0.222xh&resize=1200:*",
       "https://www.usnews.com/object/image/00000186-7564-d38f-abae-f76cd3cd0000/2024-buick-encore-gx-avenir-007.jpg?update-time=1677007253064&size=responsive640",
       "https://i.insider.com/5ef4fe145af6cc651e2e1977?width=750&format=jpeg&auto=webp",
     ],
